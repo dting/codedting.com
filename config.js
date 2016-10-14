@@ -15,13 +15,22 @@ config = {
     database: {
       client: 'postgres',
       connection: process.env.DATABASE_URL,
-      debug: false
+      debug: false,
     },
 
     server: {
       host: '0.0.0.0',
-      port: process.env.PORT
-    }
+      port: process.env.PORT,
+    },
+    storage: {
+      active: 'ghost-s3',
+      'ghost-s3': {
+          accessKeyId: process.env.S3_ACCESS_KEY_ID,
+          secretAccessKey: process.env.S3_ACCESS_KEY_SECRET,
+          bucket: process.env.S3_BUCKET,
+          region: process.env.S3_REGION,
+      },
+    },
   },
 
   // ### Development **(default)**
