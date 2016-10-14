@@ -1,0 +1,4 @@
+[submodule "content/themes/caffeine"]
+	path = content/themes/caffeine
+	url = https://github.com/dting/caffeine-theme.git
+	branch = master
