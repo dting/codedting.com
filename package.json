@@ -74,7 +74,6 @@
     "sqlite3": "3.1.6",
     "superagent": "2.3.0",
     "unidecode": "0.1.8",
-    "util": "^0.10.3",
     "validator": "5.7.0",
     "xml": "1.0.1"
   },

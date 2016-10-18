@@ -21,7 +21,8 @@ function S3Store(config) {
     this.s3Client = null;
 }
 
-util.inherits(S3Store, BaseStore);
+S3Store.prototype = Object.create(BaseStore.prototype);
+S3Store.constructor = S3Store;
 
 S3Store.prototype.getObjectURL = function(filename) {
     var assetHost = this.config.assetHost;
